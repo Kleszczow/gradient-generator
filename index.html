@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="screen"></div>
+      <div class="direcAndColors">
+        <div class="directWhen hidden"></div>
+        <div class="direct">
+          <p>Direction</p>
+          <select name="" id="sel">
+            <option value="to top">To top</option>
+            <option value="to right">To right</option>
+            <option value="to bottom">To bottom</option>
+            <option value="to left">To left</option>
+          </select>
+        </div>
+        <div class="color">
+          <p>Colors</p>
+          <div class="twoColors">
+            <input type="color" id="myColor" value="#ff0080" class="inp" />
+            <p class="topColor">kolorA</p>
+            <img
+              class="copyImg"
+              id="copy1"
+              src="./pictures/content_copy_FILL0_wght400_GRAD0_opsz48.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="rangeDiv">
+        <div class="leftRange">
+          <p>Set radial <span class="setRadialP">: 50%</span></p>
+          <input type="range" id="rangeInput" min="0" max="100" value="50" />
+        </div>
+        <div class="rightRange">
+          <input type="color" id="colorTwo" class="inp2" />
+          <p class="bottomColor">kolorB</p>
+          <img
+            class="copyImg"
+            id="copy2"
+            src="./pictures/content_copy_FILL0_wght400_GRAD0_opsz48.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="showMore">
+        <button class="showMoreBtn">
+          <div class="topShowMore">
+            <p class="mOptions">More options</p>
+            <img
+              class="arrowIMG"
+              src="./pictures/arrow_drop_down_FILL0_wght400_GRAD0_opsz48.svg"
+              alt=""
+            />
+          </div>
+        </button>
+        <div class="dropdownMenu hidden">
+          <div class="gradientType">
+            <div class="leftType">
+              <input
+                type="radio"
+                id="radioLinar"
+                value="Linear"
+                name="check"
+                class="radioInpy"
+              />
+              <label for="radioLinar">Linear Gradient</label>
+            </div>
+            <div class="rightType">
+              <input
+                type="radio"
+                id="radioRadial"
+                value="Radial"
+                name="check"
+                class="radioInpyTwo"
+              />
+              <label for="radioRadial">Radial Gradient</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="code">
+        <p class="dislay">generate new color.</p>
+      </div>
+      <div class="refAndCopy">
+        <button id="refresh">Rendom</button>
+        <button id="copy">Copy Code</button>
+      </div>
+    </div>
+    <div class="copied hidden">
+      <p>succesfull copie</p>
+    </div>
+
+    <script src="base.js"></script>
+  </body>
+</html>
